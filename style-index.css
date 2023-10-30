@@ -1,0 +1,656 @@
+/* ---------------- INITIALISATION ---------------- */
+
+* {  margin: 0;
+    padding: 0;
+	border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open sans', 'sans serif';
+    background: #232628;
+    overflow-x: hidden;
+}
+
+/* ---------------- MENU ET BARRE DE NAVIGATION ----------------  */
+
+/* HEADER */
+
+header {
+    position: static;
+}
+
+.head-banner {
+    background-color: #232628;
+    text-transform: uppercase;
+}
+
+.head-banner ul {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.head-banner ul li {
+    color: #FFFFFF;
+    min-width: 160px;
+    min-height: 70px;
+    margin: 25px 20px 0 20px;
+}
+
+.head-banner .bloc-1 {
+    background-image: url(ressources/icone-adresse.png);
+    background-size: 35px;
+    padding-left: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.head-banner .bloc-2 {
+    background-image: url(ressources/icon-telephone.png);
+    background-size: 35px;
+    padding-left: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.head-banner .title {
+    font-family: 'Montserrat', 'sans serif';
+    font-size: 15px;
+    margin-right: 2%;
+}
+
+.head-banner .active {
+    color: #CC6119;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.head-banner .head-number {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.head-banner .head-text {
+    font-weight: bold;
+    text-transform: none;
+}
+
+.head-banner .bloc-2-2 img {
+    background-color: #ffffff18;
+    border-radius: 4px;
+    padding: 2%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    width: 45px;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100vw;
+    background-color: #eceff3aa;
+    text-transform: uppercase;
+    color: #232628;
+    position:absolute;
+    z-index: 2;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-right: 120px;
+}
+
+.navbar .nav-links ul li a {
+    min-width: 100px;
+    min-height: 30px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.navbar li a:link {
+    color: #232628;
+}
+
+.navbar li a:visited {
+    color: #232628;
+}
+
+.navbar li a:hover {
+   background-color: #CC6119;
+   color: #FFFFFF;
+}
+
+/* ---------------- SECTION 1 - LE MEILLEUR DE L'AUTOMOBILE ---------------- */
+
+/* FOND */
+
+.section-1-background {
+position: absolute;
+z-index: 1;
+}
+
+.section-1-background img {
+    width: 100vw;
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    position: relative;
+    z-index: 3;
+}
+
+.section-1 .section-1-title {
+    background-color: #232628;
+    min-width: 100vw;
+    min-height: 90px;
+    margin-top: 42%;
+}
+
+.section-1 h1 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'sans serif';
+    margin-left: 10%;
+    padding: 2%;
+}
+
+.section-1 .active {
+    color: #CC6119;
+    font-weight: bold;
+}
+
+.section-1-blocs {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 4% 10% 4% 15%;
+}
+
+.section-1-blocs img {
+    width: 100%;
+}
+
+.section-1 .bloc-3 h2 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'sans serif';
+}
+
+.section-1 .bloc-3 span {
+    color: #CC6119;
+}
+
+.section-1 .bloc-4 h2 {
+    font-family: 'Montserrat', 'sans serif';
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #2326282b;
+}
+
+.section-1 .bloc-4 ul li {
+    background-image: url(ressources/icone-check-orange.png);
+    background-size: 35px;
+    padding-left: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 15px;
+}
+
+.section-1-blocs p {
+    color: #232628c1;
+    font-size: 15px;
+}
+
+.section-1-blocs .bloc-3 {
+    margin: 5px 0 10px 0;
+}
+
+.section-1-blocs .bloc-4 {
+    margin: 10px 0 10px 0;
+}
+
+/* --------------- SECTION 2 - LOUER,ACHETER VEHICULES RECENTS ---------------- */
+
+/* FOND + CARDS */
+
+.section-2-cards {
+    background-image: url(ressources/vente-location.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 125px;
+    width: 100vw;
+}
+
+.section-2-cards h2 {
+    color: #232628;
+}
+
+.section-2-cards .yellow-card {
+    background-color: #fab637e1;
+    padding: 40px;
+    margin: 15px;
+}
+
+.section-2-cards .red-card {
+    background-color: #ff4848e0;
+    padding: 40px;
+    margin: 15px;
+}
+
+.section-2-cards p {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 15px 20px 20px 0;
+}
+
+/* VEHICULES RECENTS */
+
+.section-2-cars {
+    background-color: #232628;
+    padding-bottom: 5%;
+}
+
+.section-2-cars .cars {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cars img {
+    width: 22rem;
+}
+
+.section-2-cars h1 {
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 50px 0 20px 0;
+    font-family: 'Montserrat', 'sans serif';
+}
+
+.section-2-cars .car1, .car2, .car3 {
+    border-top: 3px solid #CC6119;
+    padding-top: 40px;
+}
+
+.cars .car-title {
+    background: #434648;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    padding: 3%;
+}
+
+.cars h4 {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #6e727585;
+}
+
+.car3 span {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: #232628;
+}
+
+.cars button {
+    cursor: pointer;
+    background-color: #6C98E1;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Montserrat', 'sans serif';
+    margin-left: auto;
+    padding: 10px;
+}
+
+
+/* ---------------- SECTION 3 - POURQUOI NOUS CHOISIR, CLUB AUTO ---------------- */
+
+/* WHITE BANNER */
+
+
+.section-3 .white-banner {
+    background-color: #fff;
+    color: #232628;
+    padding: 5%;
+}
+
+.white-banner-items ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5%;
+    margin: 2%;
+}
+
+.white-banner-items p {
+    font-size: 13px;
+    color: #4346489b;
+    font-weight: 550;
+    margin-top: 10px;
+}
+
+.white-banner-items h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Montserrat', 'sans serif';
+}
+
+.white-banner h1 {
+    font-family: 'Montserrat', 'sans serif';
+    text-align: center;
+}
+
+.white-banner button {
+    cursor: pointer;
+    margin-left: 45%;
+    color: #FFFFFF;
+    background-color: #6C98E1;
+    padding: 15px 27px 15px 27px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 1px 2px 0 0px #6c99e1b8;
+}
+
+.white-banner-items .list-1,.list-2,.list-3,.list-4 {
+    background-image: url(ressources/icone-doc-orange.png);
+    background-size: 35px;
+    padding-left: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+/* CAR BANNER */
+
+.section-3 .car-banner {
+    background-image: url(ressources/vehicule3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    width: 100vw;
+}
+
+.car-banner .yellow-box {
+    background-color: #fab637e0;
+    width: 45%;
+    padding: 5%;
+    margin-left:6%;
+}
+
+.yellow-box h1 {
+    font-family: 'Montserrat', 'sans serif';
+    text-transform: uppercase;
+}
+
+.yellow-box h1 span {
+    color: #ffff;
+}
+
+.yellow-box p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    background-color: #232628;
+    padding: 4%;
+}
+
+.footer-items {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #6e727585;
+}
+
+.footer-items ul {
+    color: #9da0a4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-items h5 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-items h5 span {
+    color: #6C98E1;
+}
+
+.footer-items .days {
+    font-weight: bold;
+}
+
+.footer-items .hours {
+    color: #ffff;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.footer-items img {
+    background-color: #ffffff18;
+    border-radius: 3px;
+    padding: 2%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.footer-items p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+footer input#email {
+    cursor: pointer;
+    padding: 8px;
+}
+
+footer input#send {
+    padding: 7px;
+    background-color: #ffffff18;
+    cursor: pointer;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    color: #9da0a4;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* -------------------- MOBILE VERSION -------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 750px) {
+
+/* HEADER, NAVBAR & MENU HAMBURGER */
+
+    .navbar .nav-links  {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .navbar .nav-links.active {
+        background-color: #eceff328;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .navbar .nav-links.active ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar .nav-links.active ul li a {
+        font-size: 0.75rem;
+    }
+
+    /* SECTION 1 */
+
+    .head-banner .title,.bloc-1,.bloc-2-1,.bloc-2-2 {
+        display: none;
+    }
+
+    .head-banner .bloc-2 {
+        margin-right: auto;
+        color: #FFFFFF;
+    }
+
+    .section-1-blocs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 10%;
+        font-size: 1rem;
+    }
+
+    /* SECTION 2 CARDS */
+
+   .section-2-cards {
+        display: grid;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .section-2-cards p {
+        font-size: 1rem;
+    }
+
+    /* SECTION 2 CARS */
+
+    .section-2-cars .cars {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    .cars .car2,.car3 {
+        display: none;
+    }
+
+    /* SECTION 3 */
+
+    .section-3 .white-banner {
+        padding: 10%;
+    }
+
+    .section-3 .white-banner h1 {
+        padding-bottom: 10%;
+    }
+
+    .section-3 .white-banner-items ul {
+        padding: 10%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .section-3 .white-banner ul li {
+        background-image: url(ressources/icone-doc-orange.png);
+        background-size: 60px;
+        padding-left: 18vw;
+        background-position:0 0;
+        background-repeat: no-repeat;
+    }
+    
+    .white-banner-items p {
+        font-size: 1rem;
+        padding-bottom: 30%;
+    }
+
+    .white-banner-items h5 {
+        font-size: 1rem;
+        padding-bottom: 10%;
+    }
+
+    .white-banner button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-40%);
+    }
+
+    .car-banner .yellow-box {
+        width: 100vw;
+        margin: 0;
+        padding: 10%
+    }
+
+    .yellow-box p {
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 10%;
+    }
+    
+    .footer-items ul {
+        display: grid;
+        justify-content: center;
+        gap: 50px;
+    }
+}
