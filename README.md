@@ -7,8 +7,8 @@ Réaliser en CSS l'intégralité du site web CLUB AUTO
 
 # Liens de la maquette graphique :
 
-DESKTOP :
-Page d'accueil : https://i.imgur.com/OKw7bRe.jpg
-Page contact : https://i.imgur.com/lLNMa03.png
-Page vente : https://i.imgur.com/nutLqYO.png
+DESKTOP : <br>
+Page d'accueil : https://i.imgur.com/OKw7bRe.jpg <br>
+Page contact : https://i.imgur.com/lLNMa03.png <br>
+Page vente : https://i.imgur.com/nutLqYO.png <br>
 Page location : https://i.imgur.com/phVbicx.png
