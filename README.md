@@ -13,4 +13,4 @@ Page contact : https://i.imgur.com/lLNMa03.png <br>
 Page vente : https://i.imgur.com/nutLqYO.png <br>
 Page location : https://i.imgur.com/phVbicx.png
 
-mod 08/12/2023
+mod 08/12/20233
